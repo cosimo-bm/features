@@ -1,7 +1,7 @@
 {
     "name": "Google Cloud CLI",
     "id": "gcloud-cli",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Installs Google Cloud CLI (gcloud) for Google Cloud Platform development.",
     "documentationURL": "https://github.com/cosimo-bm/features/tree/main/src/gcloud-cli"
 }
