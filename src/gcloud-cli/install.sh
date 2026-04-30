@@ -57,7 +57,7 @@ install_dependencies() {
         if ! try_apt_update; then
             echo "⚠️ Warning: Could not update package lists. Proceeding anyway..."
         fi
-        run_cmd apt-get install -y curl gnupg lsb-release
+        run_cmd apt-get install -y curl gnupg lsb-release python-is-python3
     elif command -v yum >/dev/null 2>&1; then
         # RHEL/CentOS/Fedora (older)
         echo "📦 Installing dependencies via yum..."
