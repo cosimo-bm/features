@@ -3,5 +3,5 @@
     "id": "gcloud-cli",
     "version": "1.0.1",
     "description": "Installs Google Cloud CLI (gcloud) for Google Cloud Platform development.",
-    "documentationURL": "https://cloud.google.com/sdk/docs/install"
+    "documentationURL": "https://github.com/cosimo-bm/features/tree/main/src/gcloud-cli"
 }
