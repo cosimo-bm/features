@@ -270,6 +270,9 @@ rm -rf "$TEMP_DIR"
 echo "🔍 Verifying installation..."
 if command -v gcloud >/dev/null 2>&1; then
     echo "✅ Google Cloud CLI installed successfully."
+    export CLOUDSDK_ROOT="$INSTALL_DIR"
+    export CLOUDSDK_ROOT_DIR="$INSTALL_DIR"
+    export CLOUDSDK_PYTHON="$INSTALL_DIR/platform/bundledpythonunix/bin/python3"
     gcloud version
 else
     echo "❌ ERROR: 'gcloud' command not found in PATH"
