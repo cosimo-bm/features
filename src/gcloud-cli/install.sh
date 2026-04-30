@@ -300,3 +300,8 @@ export CLOUDSDK_PYTHON="$INSTALL_DIR/platform/bundledpythonunix/bin/python3"
 }
 
 echo "✅ Google Cloud CLI installation complete!"
+
+run_cmd apt-get remove -y python-is-python3 || {
+    echo "⚠️ problem removing python-is-python3"
+}
+echo "✅ python-is-python3 removed!"
