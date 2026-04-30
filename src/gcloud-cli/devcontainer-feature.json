@@ -1,7 +1,7 @@
 {
     "name": "Google Cloud CLI",
     "id": "gcloud-cli",
-    "installAfter": "ghcr.io/devcontainers/features/python",
+    "installAfter": ["ghcr.io/devcontainers/features/python"],
     "version": "1.0.1",
     "description": "Installs Google Cloud CLI (gcloud) for Google Cloud Platform development.",
     "documentationURL": "https://cloud.google.com/sdk/docs/install"
