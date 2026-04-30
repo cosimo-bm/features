@@ -57,7 +57,7 @@ install_dependencies() {
         if ! try_apt_update; then
             echo "⚠️ Warning: Could not update package lists. Proceeding anyway..."
         fi
-        run_cmd apt-get install -y curl gnupg lsb-release python-is-python3
+        run_cmd apt-get install -y curl gnupg lsb-release #python-is-python3
     elif command -v yum >/dev/null 2>&1; then
         # RHEL/CentOS/Fedora (older)
         echo "📦 Installing dependencies via yum..."
@@ -298,7 +298,7 @@ export CLOUDSDK_PYTHON="$INSTALL_DIR/platform/bundledpythonunix/bin/python3"
 
 echo "✅ Google Cloud CLI installation complete!"
 
-run_cmd apt-get remove -y python-is-python3 || {
-    echo "⚠️ problem removing python-is-python3"
-}
-echo "✅ python-is-python3 removed!"
+#run_cmd apt-get remove -y python-is-python3 || {
+#    echo "⚠️ problem removing python-is-python3"
+#}
+#echo "✅ python-is-python3 removed!"
